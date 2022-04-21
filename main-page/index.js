@@ -1,10 +1,4 @@
-function startGame(){
-    var charSelect = prompt('Sua jornada iniciou, qual personagem você vai escolher: ')
-    while (charSelect != '1' && charSelect != '2' && charSelect != '3'){
-        alert('Personagem escolhido inválido.')
-        charSelect = prompt('Por favor, escolha entre os personagens 1, 2 ou 3 (somente número)')
-    }
-    if (charSelect == '1') {
-        
-    }
+function startGameAnakan() {
+    alert('A jornada de Anakan foi a escolhida! Um caminho de descobertas e conquistas lhe aguarda!')
+    window.location.href = 'C:\Users\Vitor Luci\Documents\GitHub\Web-Game\first_stage\anakan1_gameplay\anakan_first.html'
 }
