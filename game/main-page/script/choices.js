@@ -13,7 +13,7 @@ function startGame() {
     }
 }
 
-function pathSelected() {
+var escolha = function pathSelected() {
     var path = prompt('Qual caminho você vai seguir?')
     while (path != '1' && path != '2') {
         window.alert('Escolha inválida, selecione entre o caminho 1 ou o caminho 2!')
