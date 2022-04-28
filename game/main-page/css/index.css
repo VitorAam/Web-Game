@@ -12,8 +12,9 @@ body {
 }
 
 h1 {
+    animation: neon 1.5s ease-in-out infinite alternate;
     text-shadow: 5px 3px 5px rgba(255, 255, 255, 0.456);
-    color: rgb(11, 164, 11);
+    color: rgb(21, 105, 21);
 }
 
 h1, h2{
@@ -23,7 +24,11 @@ h1, h2{
 
 h3 {
     margin: 10px 0px;
-
+    background-image: linear-gradient(90deg, green, rgba(0, 0, 0, 0.448));
+    padding-left: 20px;
+    border-radius: 6px;
+    color: white;
+    width: 50%;
 }
 
 button {
@@ -72,3 +77,13 @@ a {
     color: rgb(219, 8, 22);
 }
 
+@keyframes neon {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+        0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+        0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+    }
+  }
