@@ -4,10 +4,29 @@
 }
 
 body {
-    height: 100vh;
+    height: 97vh;
     width: 100vw;
     text-align: center;
+    background-color: black;
+    color: green;
+    background-image: url(../../extra-archives/stars-g.jpg);
 }
+
+h1, h2{
+    margin: 1.5vh;
+    font-size: 2em;
+}
+
+button {
+    width: 40%;
+    max-width: 200px;
+    height: 6vh;
+    margin: auto;
+    font-size: large;
+    background-color: green;
+    color: white;
+}
+
 
 main {
     display: flex;
@@ -15,9 +34,13 @@ main {
     flex-wrap: wrap;
     row-gap: 3vh;
     width: 60vw;
-    height: 70vh;
+    height: 66vh;
     margin: 8vh auto;
     text-align: justify;
+    background-color: rgba(0, 0, 0, 0.636);
+    padding: 2vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 6px rgba(0, 128, 0, 0.484);
 }
 
 #characters {
@@ -25,4 +48,15 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 3vh;
+}
+
+footer {
+    margin-bottom: -2vh;
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+@media screen and (max-width: 339px){
+    button{
+        font-size: 0.9em;
+    }
 }
