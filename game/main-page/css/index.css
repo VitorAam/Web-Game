@@ -13,8 +13,12 @@ body {
 
 h1 {
     animation: neon 1.5s ease-in-out infinite alternate;
-    text-shadow: 5px 3px 5px rgba(255, 255, 255, 0.456);
     color: rgb(21, 105, 21);
+}
+
+h2 {
+    color: transparent;
+	animation: blur 5s ease-out infinite;
 }
 
 h1, h2{
@@ -79,11 +83,22 @@ a {
 
 @keyframes neon {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
         0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
     }
     to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
         0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
     }
-  }
+}
+
+@keyframes blur {
+	0%		{text-shadow:  0 0 100px rgba(7, 244, 7, 0.903); opacity:0;}
+	5%		{text-shadow:  0 0 90px rgba(7, 244, 7, 0.903);}
+	15%		{opacity: 1;}
+	20%		{text-shadow:  0 0 0px rgba(7, 244, 7, 0.903);}
+	80%		{text-shadow:  0 0 0px rgba(7, 244, 7, 0.903);}
+	85%		{opacity: 1;}
+	95%		{text-shadow:  0 0 90px rgba(7, 244, 7, 0.903);}
+	100%	{text-shadow:  0 0 100px rgba(7, 244, 7, 0.903); opacity:0;}
+}
