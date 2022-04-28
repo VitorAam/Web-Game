@@ -59,4 +59,7 @@ footer {
     button{
         font-size: 0.9em;
     }
+    main {
+        font-size: 0.5em;
+    }
 }
