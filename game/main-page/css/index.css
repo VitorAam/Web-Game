@@ -7,18 +7,20 @@ body {
     width: 100vw;
     text-align: center;
     background-color: black;
-    color: green;
+    color: rgba(7, 244, 7, 0.903);
     background-image: url(../../extra-archives/stars-g.jpg);
 }
 
 h1 {
     animation: neon 1.5s ease-in-out infinite alternate;
-    color: rgb(21, 105, 21);
+    color: rgb(40, 56, 40);
 }
 
 h2 {
     color: transparent;
-	animation: blur 5s ease-out infinite;
+	animation: blur 15s infinite;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 h1, h2{
@@ -28,7 +30,7 @@ h1, h2{
 
 h3 {
     margin: 10px 0px;
-    background-image: linear-gradient(90deg, green, rgba(0, 0, 0, 0.448));
+    background-image: linear-gradient(90deg, green, rgba(0, 0, 0, 0.059));
     padding-left: 20px;
     border-radius: 6px;
     color: white;
@@ -43,6 +45,7 @@ button {
     font-size: large;
     background-color: green;
     color: white;
+    border-radius: 5px;
 }
 
 
@@ -83,12 +86,12 @@ a {
 
 @keyframes neon {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
-        0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+        text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255), 0 0 40px rgb(182, 255, 0),
+        0 0 70px rgb(182, 255, 0), 0 0 80px rgb(182, 255, 0), 0 0 100px rgb(182, 255, 0), 0 0 150px rgb(182, 255, 0);
     }
     to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
-        0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+        text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 0 0 20px rgb(182, 255, 0),
+        0 0 35px rgb(182, 255, 0), 0 0 40px rgb(182, 255, 0), 0 0 50px rgb(182, 255, 0), 0 0 75px rgb(182, 255, 0);
     }
 }
 
